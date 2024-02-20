@@ -29,7 +29,7 @@ def prodEnvName = "TrainingProd2" //name of Production Environment in your DBmae
 
 //Git
 @Field
-def rootFolder = "packages\\mssql\\regular" //DBmaestro DOP packages root folder
+def rootFolder = "C:\\DBMaestro\\Training\\GitJenkinsLab\\dbmGithubJenkinsLab\\packages\\mssql\\regular>" //DBmaestro DOP packages root folder
 
 //Jira - optional - no need to delete anything if you are not using Jira
 @Field
