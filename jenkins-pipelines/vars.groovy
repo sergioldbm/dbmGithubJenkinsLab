@@ -65,8 +65,8 @@ def prodRbErrorLabel = "Failed-Rollback-PROD" //Jira Issue Label for when Produc
 
 //Transition IDs
 @Field
-def qaUpgTransitionId = 101 //Transition ID to move Jira Issue to “In QA” status
+def qaUpgTransitionId = 71 //Transition ID to move Jira Issue to “In QA” status
 @Field
-def prodUpgTransitionId = 121 //Transition ID to move Jira Issue to “In Prod” status
+def prodUpgTransitionId = 41 //Transition ID to move Jira Issue to “In Prod” status
 
 return this;
