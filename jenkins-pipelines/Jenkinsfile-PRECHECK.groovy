@@ -63,7 +63,7 @@ try{
     stage("Update Jira Issue"){
         withEnv(["JIRA_SITE=${myvars.jiraSite}"]) {
           def comment = [ body: "${BUILD_URL}console" ]
-          /*  jiraIssueAddLabel(issueKey, myvars.precheckOkLabel)*/
+          jiraIssueAddLabel(issueKey, myvars.precheckOkLabel)
         }
     }
   }
@@ -73,7 +73,7 @@ catch(e){
   if(feedbackToJira){
     withEnv(["JIRA_SITE=${myvars.jiraSite}"]) {
       def comment = [ body: "${BUILD_URL}console" ]
-       /* jiraIssueAddLabel(issueKey, myvars.precheckErrorLabel)*/
+      jiraIssueAddLabel(issueKey, myvars.precheckErrorLabel)
     }
   }
   throw e
