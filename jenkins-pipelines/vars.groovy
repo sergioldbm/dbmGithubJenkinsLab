@@ -21,11 +21,11 @@ def createScriptsOnly = "False" //If you want to create a rollback package and s
 def getPackagesFilePath = "GetPackagesOutput.json"
 //DBmaestro DOP Environments
 @Field
-def rsEnvName = "TrainingRS2" // name of Release Source Environment in your DBmaestro Project
+def rsEnvName = "Release Source" // name of Release Source Environment in your DBmaestro Project
 @Field
-def qaEnvName = "TRainingUAT2" //name of QA Environment in your DBmaestro Project
+def qaEnvName = "QA_Env_1" //name of QA Environment in your DBmaestro Project
 @Field
-def prodEnvName = "TrainingProd2" //name of Production Environment in your DBmaestro Project
+def prodEnvName = "Prod_Env_1" //name of Production Environment in your DBmaestro Project
 
 //Git
 @Field
